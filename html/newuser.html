@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New User</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+	<style type="text/css">
+		@-webkit-keyframes fadeIn {
+			from { opacity: 0; background-color: #000;}
+			to { opacity: 1; background-color: rgba(0,0,0,0.8); }
+		}
+		@-webkit-keyframes hOver {
+			from {
+				transform: scale(1, 1);
+		    }
+		    to {
+		    	transform: scale(1.5, 1.5);
+		    }
+		}
+		html {
+			animation-name: fadeIn;
+			animation-duration: 1s;
+			font-family: Verdana, Geneva, sans-serif;
+			font-family: Quicksand;
+			background-color: rgba(0,0,0,0.8);
+		}
+		body {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		.inputarea {
+			resize: none;
+			outline: 0px;
+			border-width: 0px;
+			background-color: rgba(73, 240, 5, 0.4);
+			padding: 7px;
+			padding-left: 15px;
+			padding-top: 10px;
+			position: relative;
+			left: 20.5%;
+			width: 60%;
+			height: 35%;
+			padding: 20px;
+			font-size: 16px;
+			font-family: Quicksand;
+		}
+		.box {
+			position: absolute;
+			top: 75px;
+			left: 7%;
+			right: 7%;
+			padding: 18px;
+			height: auto;
+			border-radius: 20px;
+			background-color: #F8F9F9;
+		}
+		.btn {
+			position: relative;
+			bottom: 2px;
+			left:47%;	
+			height: 44px;
+			width: 10%;
+			background-color: #D6DBDF;
+			text-align: center;
+			border-width: 0;
+			outline: none;
+			box-shadow: 5px 5px 50px #444444;
+		}
+		.btn:hover,
+		.btn:focus {
+		background-color: #C0C0C0;
+		cursor: pointer;
+		animation: hOver 1s;
+		}
+		button[type=submit]{
+			font-size: 16px;
+			font-weight: bold;
+			font-family: Quicksand;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<form method="POST" action="../php/justnewuser.php">
+			<input type="text" name="UserName" placeholder="Username" class="inputarea" required>
+			<br><br>
+			<input type="email" name="Email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" class="inputarea" placeholder="Emai Id" required>
+			<br><br>
+			<input type="password" name="Password" placeholder="Password" class="inputarea" required>
+			<br><br>
+			<input type="text" name="Name" placeholder="Name" class="inputarea">
+			<br><br>
+			<input type="tel" name="Contact" placeholder="Phone Number" class="inputarea">
+			<br><br>
+			<input type="text" name="Address" placeholder="Address" class="inputarea">
+			<br><br>
+			<input type="text" name="Area" placeholder="Area" class="inputarea" required>
+			<br><br>
+			<button type="submit" class="btn" name="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

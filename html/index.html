@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+
+	<style type="text/css">
+		html {
+			font-family: Quicksand;
+		}
+		@-webkit-keyframes openOpacity {
+			from { top:-40em;opacity:0; }
+			to { top:0em;opacity: 0.8; }
+		}
+		@-webkit-keyframes pushUp {
+			from { position:relative; top:7em;}
+			to { position:relative; top:1em;}
+		}
+		@-webkit-keyframes moveIns {
+			0% { top: 10em; }
+			50% { top: 25em; }
+			100% { top: 15em; }
+		}
+		@-webkit-keyframes hOver {
+			from {
+				transform: scale(1, 1);
+		    }
+		    to {
+		    	transform: scale(1.2, 1.2);
+		    }
+		}
+		.darkInsert {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.8;
+			animation-name: openOpacity;
+			animation-duration: 3s;
+			color: white;
+		}
+		.BigText  {
+			font-size: 40px;
+			font-weight: bold;
+			animation-name: pushUp;
+			animation-duration: 2s;
+			animation-delay: 1s;
+			position: relative;
+			top: 1em;
+		}
+		.tagline {
+			font-size: 30px;
+			position: relative;
+			top: 4em;
+		}
+		.btn {
+			position: relative;
+			top: 15em;
+			left:30%;	
+			height: 100px;
+			width: 20%;
+			background-color: rgba(73, 240, 5, 0.5);
+			text-align: center;
+			border:none;
+			outline: none;
+			/*animation: moveIns 3s;*/
+		}
+		.btn:hover,
+		.btn:focus {
+		background-color: rgba(73, 240, 5, 0.9);
+		cursor: pointer;
+		animation: hOver 2s infinite;
+		}
+		label {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="darkInsert">
+		<center><p class="BigText">Find a Restaurant</p>
+			<p class="tagline">Are you hungry??</p></center>
+		<button onclick=" window.location.href='juslogin.html'; " class="btn"><label>LOGIN</label></button>
+		<button onclick=" window.location.href='newuser.html'; " class="btn" ><label>SIGN UP</label></button>
+	</div>
+</body>
+</html>
