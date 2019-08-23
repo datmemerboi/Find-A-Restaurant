@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+	<style type="text/css">
+		@-webkit-keyframes fadeIn {
+			from { opacity: 0;}
+			to { opacity: 1; }
+		}
+		html {
+			animation-name: fadeIn;
+			animation-duration: 1s;
+		}
+		body {
+			background-color: #000;
+			font-family: Verdana, Geneva, sans-serif;
+			font-family: Quicksand;
+			font-size: 15px;
+			font-weight: 900;
+		}
+		.inputarea {
+			resize: none;
+			outline: 0px;
+			border-width: 0px;
+			/*background-color: #5FD6EE;*/
+			background-color: rgba(60, 200, 3, 0.8);
+			padding: 7px;
+			padding-left: 15px;
+			padding-top: 10px;
+			position: relative;
+			left: 28%;
+			width: 40%;
+			height: 35%;
+			padding: 20px;
+			font-family: Quicksand;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.box {
+			position: absolute;
+			top: 75px;
+			left: 7%;
+			right: 7%;
+			padding: 2em;
+			height:auto
+		}
+		.btn {
+			position: relative;
+			bottom: 0px;
+			left:45%;	
+			height: 44px;
+			width: 10%;
+			background-color: #D6DBDF;
+			text-align: center;
+			border-width: 0;
+			outline: none;
+		}
+		.btn:hover,
+		.btn:focus {
+		background-color: #C0C0C0;
+		cursor: pointer;
+		}
+		button[type=submit]{
+			font-family: Quicksand;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		::placeholder {
+			color: white;
+		}
+	</style>
+</HEAD>
+<BODY>
+	<div class="box">
+		<form action="login.php" method="POST">
+			<input type="text" name="UserName" placeholder="Username" class="inputarea">
+			<br><br>
+			<input type="password" name="Password" placeholder="Password" class="inputarea">
+			<br><br>
+			<button type="submit" class="btn" name="submit">Submit</button>
+		</form>
+	</div>
+</BODY>
+</HTML>
