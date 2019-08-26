@@ -12,9 +12,13 @@ Ordered food's progression can be **tracked** as well.
 The following will be used in `/inc` folder files
 
 Hostname: `localhost`
+
 Username used: `DMB` (mention your own)
+
 Password used: `DMB` (mention your own)
+
 Database name: `rest`
+
 Table names: `members`, `joints`, `reviews`
 
 **23 Aug 19 - Second Commit**
