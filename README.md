@@ -8,6 +8,7 @@ User can place an order for **delivery**, as well as, **take-away**.
 User can also book a table at the restaurant by specifying the **time** and the **number of persons**.
 Ordered food's progression can be **tracked** as well.
 
+**First Commit**
 The following will be used in `/inc` folder files
 
 Hostname: `localhost`
@@ -16,5 +17,8 @@ Password used: `DMB` (mention your own)
 Database name: `rest`
 Table names: `members`, `joints`, `reviews`
 
-**23 Aug 19**
-> Rebuilding the entire software with certain changes and updates. Updates available in `/RestaurantFinder`.
+**23 Aug 19 - Second Commit**
+> Rebuilding the entire software with certain changes and updates. Updates available in `/RestaurantFinder`
+
+**26 Aug 19 - Third Commit**
+> Working Screenshots of the `/RestaurantFinder` files. Other factors will be updated soon.
