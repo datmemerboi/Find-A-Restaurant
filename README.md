@@ -8,5 +8,13 @@ User can place an order for **delivery**, as well as, **take-away**.
 User can also book a table at the restaurant by specifying the **time** and the **number of persons**.
 Ordered food's progression can be **tracked** as well.
 
+The following will be used in `/inc` folder files
+
+Hostname: `localhost`
+Username used: `DMB` (mention your own)
+Password used: `DMB` (mention your own)
+Database name: `rest`
+Table names: `members`, `joints`, `reviews`
+
 **23 Aug 19**
-> Rebuilding the entire software with certain changes and updates. Updates available in /RestaurantFinder.
+> Rebuilding the entire software with certain changes and updates. Updates available in `/RestaurantFinder`.
