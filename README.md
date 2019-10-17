@@ -21,8 +21,11 @@ Database name: `rest`
 
 Table names: `members`, `joints`, `reviews`
 
-**23 Aug 19 - Second Commit**
+**23 Aug '19 - Second Commit**
 > Rebuilding the entire software with certain changes and updates. Updates available in `/RestaurantFinder`
 
-**26 Aug 19 - Third Commit**
+**26 Aug '19 - Third Commit**
 > Working Screenshots of the `/RestaurantFinder` files. Other factors will be updated soon.
+
+**17 Oct '19 - Fourth Commit**
+> Search Restaurant implemented in `index.php` and `searchrest.inc.php`. Screenshots updated.
