@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>New User</title>
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" /> -->
 	<style type="text/css">
 		@-webkit-keyframes fadeIn {
 			from { opacity: 0; }
@@ -15,7 +15,7 @@
 		}
 		body {
 			font-family: Verdana, Geneva, sans-serif;
-			font-family: Quicksand;
+			/*font-family: Quicksand;*/
 			background-color: #000;
 			font-size: 16px;
 			font-weight: 400;
@@ -34,10 +34,12 @@
 			width: 40%;
 			height: 35%;
 			padding: 20px;
-			font-family: Quicksand;
+			/*font-family: Quicksand;*/
+			font-family: Verdana, Geneva, sans-serif;
 			font-size: 16px;
 			font-weight: bold;
 			text-align: center;
+			color:white;
 		}
 
 		.box {
@@ -67,10 +69,12 @@
 		button[type=submit]{
 			font-size: 16px;
 			font-weight: bold;
-			font-family: Quicksand;
+			/*font-family: Quicksand;*/
+			font-family: Verdana, Geneva, sans-serif;
 		}
 		::placeholder {
 			color:white;
+			font-weight: normal;
 		};
 	</style>
 </head>
@@ -79,7 +83,7 @@
 		<form method="POST" action="newuser.php">
 			<input type="text" name="UserName" placeholder="Username" class="inputarea" required>
 			<br><br>
-			<input type="email" name="Email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" class="inputarea" placeholder="Emai Id" required>
+			<input type="email" name="Email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1,}[a-zA-Z]{2,}" class="inputarea" placeholder="Emai Id" required>
 			<br><br>
 			<input type="password" name="Password" placeholder="Password" class="inputarea" required>
 			<br><br>

@@ -1,6 +1,8 @@
 <?php
 	require 'searchrest.inc.php';
+	require 'searcharea.inc.php';
 	require 'session.inc.php';
+	require 'booktable.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,6 +13,7 @@
 	<style type="text/css">
 		html {
 			font-family: Verdana, Geneva, sans-serif;
+			/*font-family: Quicksand;*/
 			font-size: 19px;
 		}
 		body {
@@ -35,6 +38,7 @@
 			border-width: 0;
 			outline: none;
 			color: #000;
+			/*font-family: Quicksand;*/
 			font-family: Verdana, Geneva, sans-serif;
 			font-size: 14px;
 			font-weight: bold;
@@ -49,6 +53,7 @@
 			top: -7vh;
 		}
 		#bookings {
+			/*background-color: rgba(73, 240, 5, 0.5);*/
 			background-color: #2C9B00;
 			width: 36vw;
 			position: relative;
@@ -66,6 +71,7 @@
 			left: 50%;
 		}
 		#search-bar {
+			/*background-color: #2C9B00;*/
 			background-color: #F0F0F0;
 			width: 38vw;
 			position: relative;
@@ -83,6 +89,7 @@
 			position: relative;
 			top: 16.7vh;
 			left: -3.5vw;
+			/*background-color: orange;*/
 		}
 		#search-result {
 			width: 38vw;
@@ -96,9 +103,13 @@
 			outline: none;
 			align-content: center;
 			text-align: center;
+			/*display: none;*/
 		}
 		a {
 			color: #005DFF;
+		}
+		p{
+			user-select: none;
 		}
 	</style>
 </head>
@@ -114,6 +125,7 @@
 		<button class="btn logoutBtn" onclick=" window.location.href='logout.php';"><label>Log Out</label></button>
 		<div id="bookings">
 			<p>Your Upcoming Bookings:</p>
+			<?php booked($conn); ?>
 		</div>
 	</div>
 	<div id="search-half">
@@ -122,20 +134,22 @@
 			<button class="btn searchBtn"><i class="fa fa-search"></i></button>
 		</form>
 		<div id="search-result">
-			<?php searchrest($conn); ?>
+			<?php searchrest($conn);
+			searcharea($conn); ?>
 		</div>
 	</div>
+
+		<script>
+		window.onload = function() {
+		var PlaceholderIntervalVar = setInterval(function() {
+			var placeholderTimeoutVar = setTimeout(function() {
+				document.getElementById("search-bar").placeholder ="Search Restaurant Name";
+			}, 1000)
+			var placeholderTimeoutVar = setTimeout( function(){
+				document.getElementById("search-bar").placeholder = "Search Restaurant Area";
+			}, 4000)
+		},6000);
+		}
+		</script>
 </body>
-<script>
-	window.onload = function() {
-	var PlaceholderIntervalVar = setInterval(function() {
-		var placeholderTimeoutVar = setTimeout(function() {
-			document.getElementById("search-bar").placeholder ="Search Restaurant Name";
-		}, 1000)
-		var placeholderTimeoutVar = setTimeout( function(){
-			document.getElementById("search-bar").placeholder = "Search Restaurant Area";
-		}, 4000)
-	},6000);
-	}
-</script>
 </html>
