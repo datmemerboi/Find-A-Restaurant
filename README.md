@@ -29,3 +29,6 @@ Table names: `members`, `joints`, `reviews`
 
 **17 Oct '19 - Fourth Commit**
 > Search Restaurant implemented in `index.php` and `searchrest.inc.php`. Screenshots updated.
+
+**10 Nov '19 - Fifth Commit**
+> Complete application functioning. Possible first release.
